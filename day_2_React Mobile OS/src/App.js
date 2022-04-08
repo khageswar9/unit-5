@@ -2,30 +2,31 @@
 import './App.css';
 
 function App() {
-  const operetingSystem = ["Android","Blackberry","Iphone","Windows Phone"];
-  const Manufacture = ["Samsung","HTC","Micromax","Apple"];
+  const Data = [
+    {
+      Title: "Mobile Operatiing System",
+      List:["Android","Blackberry","Iphone","Windows Phone"],
+    },
+    {
+      Title: "Mobile Manufacture",
+      List:["Samsung","HTC","Micromax","Apple"],
+    }
+  ]
   return (
     <div className="App">
-      <h2>Mobile Operating System </h2>
-        <ul>
-          {operetingSystem.map((e)=>{
-            return <Oper oper={e}/>
-          })}
-        </ul>
-        <h2>Mobile Manufacture </h2>
-        <ul>
-          {Manufacture.map((e)=>{
-            return <Oper oper={e}/>
-          })}
-        </ul>
+      {Data.map((e)=>{
+        return <Shop Title={e.Title} List={e.List}  />
+      })}
     </div>
   );
 };
-// component
-function Oper(data){
-  return <li>{data.oper}</li>
+function Shop({Title,List}){
+  return <>
+  <h2>{Title}</h2>
+  <ul>{List.map((e)=>{
+    return <li>{e}</li>
+  })}</ul>
+  </>
 }
-
-
 
 export default App;

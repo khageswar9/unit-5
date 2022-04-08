@@ -2,8 +2,6 @@
 import './App.css';
 
 function App() {
-  const operetingSystem = ["Android","Blackberry","Iphone","Windows Phone"];
-  const Manufacture = ["Samsung","HTC","Micromax","Apple"];
   const links = ["Service", "Projects", "About"];
   return (
     <div className="App">
