@@ -15,8 +15,7 @@ export const Inventory = () => {
         ...inv,
         ...m
       };
-      setInv(res)
-      console.log(res)
+      setInv(res);
     }
 
 
