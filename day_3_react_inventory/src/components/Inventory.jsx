@@ -15,6 +15,9 @@ export const Inventory = () => {
         ...inv,
         ...m
       };
+      if(res[str]<0){
+        return;
+      }
       setInv(res);
     }
 
