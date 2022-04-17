@@ -1,3 +1,6 @@
+*{
+    font-family: sans-serif;
+}
 .todo-list {
     margin: auto;
     margin-top: 1em;
@@ -31,14 +34,9 @@
     display: inline-block;
 }
 
-/* .todo-done {
-    height: 25px;
-    width: 25px;
-    background: rgb(206,206,206);
-    border: 0.3em solid rgb(135,255,197);
-    border-radius: 50%;
-    display: inline-block;
-} */
+.todo-done {
+    text-decoration: line-through;
+}
 #plus{
     font-size: 15px;
     font-weight: 800;

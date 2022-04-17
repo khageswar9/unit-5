@@ -41,7 +41,7 @@ const Todo = () => {
                 <button onClick={() => {getData("user-input")}} id="plus">+</button>
             </div>
             <ToDoList data={TodoData} toggle={toggle}/>
-            <button onClick={()=>{deldata(TodoData)}}>show</button>
+            <button onClick={()=>{deldata(TodoData)}}>Show Deleted Todos</button>
             <Deletedata data={deletedata}/>
         </>
     )
