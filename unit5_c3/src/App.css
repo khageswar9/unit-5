@@ -1,6 +1,7 @@
 body{
   background-color: whitesmoke;
   text-align: center;
+  color:black
 }
 .list_container{
   display: grid;
