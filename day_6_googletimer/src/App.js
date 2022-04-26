@@ -1,12 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import StopWatch from './Components/StopWatch.js';
 
 function App() {
-  return (
-    <div className="App">
-      00:00
-    </div>
-  );
+return (
+	<div className="App">
+	<StopWatch />
+	</div>
+);
 }
 
 export default App;
