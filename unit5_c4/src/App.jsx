@@ -29,10 +29,10 @@ function App() {
           Home
         </Link>
         {/* Show either login or logout below */}
-        {login ? <Link className="nav-login" to="/login">
-          Login
-        </Link> : <Link className="nav-logout" to="/logout">
+        {login ? <Link className="nav-logout" to="/logout">
           Logout
+        </Link> :  <Link className="nav-login" to="/login">
+          Login
         </Link> }
       </div>
         {/* Routes are as follows:
