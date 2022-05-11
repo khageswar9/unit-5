@@ -1,6 +1,7 @@
 import { LOGIN , LOGOUT } from "./actions";
 const init = {
   auth : false ,
+  
 
 };
 
